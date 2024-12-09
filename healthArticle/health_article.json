@@ -1,5 +1,10 @@
 var xhr = new XMLHttpRequest();
 var url = './health_article.json';
+xhr.onload = function() {
+
+  var articles = xhr.response.articles;
+var articlesDiv = document.getElementById('articles');
+}
 {
   "articles": [
     {
